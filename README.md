@@ -1,1 +1,1 @@
-DESENVOLVIDO PELO LUCAS !!!!!!!
+pela amor de Deus
