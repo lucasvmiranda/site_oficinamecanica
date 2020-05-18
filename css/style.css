@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    width: 980px ;
+    background-color: rgba(230, 11, 11, 0.918);
+    margin: 0 auto;
+   
+}
+
+nav{
+    height: 75px;
+}
+
+nav div {
+    display: flex;
+
+
+}
+
+nav img{
+
+width: 12%;
+
+}
+.container nav ul li{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 5%;
+    text-transform: uppercase;
+    margin-left: 25px;
+    
+   
+}
+
