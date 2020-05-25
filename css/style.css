@@ -2,67 +2,106 @@
 
 
 *{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    font-family: 'Bebas Neue', cursive;
-    
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive;
 }
 
 body {
-    background-color: #f3963f;
+  background-color: #f3963f;
 }
 
 .container{
-    width: 980px;
-    margin: 0 auto;
-    background-color: #FFF;
-
+  width: 980px;
+  margin: 0 auto;
+  background-color: #FFF;
 }
 
 /* == menu == */
 nav {
-    height: 75px;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    
+  height: 75px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }
 
 nav div{
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 nav img{
-    width: 60%;
+  width: 60%;
 }
 
 nav ul {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 
 nav ul li{ 
-    display: inline-block;
-    padding: 25px 30px;
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+  display: inline-block;
+  padding: 16px 15px;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: 55px;
+  cursor: pointer;
 }
 
 nav ul li:hover {
-    color: #f3963f;
-    border-bottom: #f3963f solid 2px;
+  color: #f3963f;
+  border-bottom: #f3963f solid 3px;
 }
 
-/* == slideShow == */
-* {box-sizing:border-box}
 
 /* Slideshow container */
+
+.slideshow-container{
+  min-height: 326px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mySlides{
+  position: absolute;
+}
+
+.mySlides img{
+  width: 100%;
+}
+.prev, .next{
+  position: relative;
+  height: 51px;
+  width: 50px;
+  text-align: center;
+  font-size: 35px;
+  top: 21vh;
+  background-color: rgba(143, 143, 143, 0.3);
+  color: #f3963f;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.prev{
+  margin-left: 80px;
+  padding-right: 3px;
+}
+
+.next{
+  margin-right: 80px;
+  padding-left: 3px;
+}
+
+.remo{
+  display: none;
+}
+/* Slideshow container 
 .slideshow-container {
   max-width: 980px;
   position: relative;
@@ -70,13 +109,15 @@ nav ul li:hover {
   padding-top:  35px;
   background-color: #FFF;
 }
-
-/* Hide the images by default */
+*/
+/* Hide the images by default 
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
+*/
+
+/* Next & previous buttons
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -91,19 +132,24 @@ nav ul li:hover {
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+*/
 
-/* Position the "next button" to the right */
+/* Position the "next button" to the right 
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+*/
+
+/* On hover, add a black background color with a little bit see-through 
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Caption text */
+*/
+
+/* Caption text 
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -114,7 +160,9 @@ nav ul li:hover {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+*/
+
+/* Number text (1/3 etc) 
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -122,8 +170,9 @@ nav ul li:hover {
   position: absolute;
   top: 0;
 }
+*/
 
-/* The dots/bullets/indicators */
+/* The dots/bullets/indicators
 .dot {
   cursor: pointer;
   height: 15px;
@@ -138,7 +187,7 @@ nav ul li:hover {
 .active, .dot:hover {
   background-color: #717171;
 }
-
+ */
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;

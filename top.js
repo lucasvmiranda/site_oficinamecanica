@@ -1,42 +1,36 @@
-var slideIndex = 1;
-showSlides(slideIndex);
+let = slidexIndex = 0
+const slides = document.querySelectorAll('.mySlides')
 
-// Next/previous controls
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    mudarSlide(slidexIndex += n)
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
+function mudarSlide(n){
+    if(n > slides.length ){slidexIndex = 1}
+    if(n < 1){ slidexIndex = slides.length}
+
+    for(let slide of slides){
+        slide.classList.add('remo')
+    }
+
+    slides[slidexIndex - 1 ].classList.remove('remo')
+
 }
 
-function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-}
-var slideIndex = 0;
-showSlides();
+function showSlides(){
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+    for(let slide of slides){
+        slide.classList.add('remo')
     }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 4000); // Change image every 4 seconds
+
+    slidexIndex++
+
+    if(slidexIndex > slides.length ){slidexIndex = 1 }
+
+    slides[slidexIndex - 1 ].classList.remove('remo')
+
+    setTimeout(showSlides, 4000)
+
 }
+
+showSlides()
