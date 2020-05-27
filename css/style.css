@@ -1,16 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
 
+:root{
+  --prymary-color: #f3963f;
+  --second-color: rgba(143, 143, 143, 0.3);
+  --third-color: rgba(0, 0, 0, 0.6);
+  --fourth-color: rgba(161, 161, 161, 0.4);
+}
 
 *{
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background-color: #f3963f;
+  background-color: var(--fourth-color);
 }
 
 .container{
@@ -44,8 +50,8 @@ nav ul {
 
 nav ul li{ 
   display: inline-block;
-  padding: 16px 15px;
-  font-size: 30px;
+  padding: 23px 15px;
+  font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -54,8 +60,8 @@ nav ul li{
 }
 
 nav ul li:hover {
-  color: #f3963f;
-  border-bottom: #f3963f solid 3px;
+  color: var(--prymary-color);
+  border-bottom: var(--prymary-color) solid 3px;
 }
 
 
@@ -82,8 +88,8 @@ nav ul li:hover {
   text-align: center;
   font-size: 35px;
   top: 16vh;
-  background-color: rgba(143, 143, 143, 0.3);
-  color: #f3963f;
+  background-color: var(--second-color);
+  color: var(--prymary-color);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -119,3 +125,12 @@ nav ul li:hover {
   to {opacity: 1}
 }
 
+/* informação */
+.desc{
+  padding: 24px;
+  text-align: center;
+  color: var(--third-color);
+  font-size: 20px;
+  font-weight: 350;
+  letter-spacing: 1px;
+}
