@@ -127,7 +127,7 @@ nav ul li:hover {
 
 /* informação */
 .desc{
-  padding: 24px;
+  padding: 26px 0;
   text-align: center;
   color: var(--third-color);
   font-size: 20px;
