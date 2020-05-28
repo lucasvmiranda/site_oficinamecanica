@@ -4,7 +4,7 @@
   --prymary-color: #f3963f;
   --second-color: rgba(143, 143, 143, 0.3);
   --third-color: rgba(0, 0, 0, 0.6);
-  --fourth-color: rgba(161, 161, 161, 0.4);
+  --fourth-color: rgba(161, 161, 161, 0.1);
 }
 
 *{
@@ -20,7 +20,7 @@ body {
 }
 
 .container{
-  width: 980px;
+  max-width: 1200px;
   margin: 0 auto;
   background-color: #FFF;
 }
@@ -68,7 +68,7 @@ nav ul li:hover {
 /* Slideshow container */
 
 .slideshow-container{
-  min-height: 326px;
+  min-height: 400px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -87,7 +87,7 @@ nav ul li:hover {
   width: 50px;
   text-align: center;
   font-size: 35px;
-  top: 16vh;
+  top: 20vh;
   background-color: var(--second-color);
   color: var(--prymary-color);
   border-radius: 50%;
@@ -127,7 +127,9 @@ nav ul li:hover {
 
 /* informação */
 .desc{
-  padding: 26px 0;
+  width: 100%;
+  min-height: 200px;
+  padding: 150px 50px;
   text-align: center;
   color: var(--third-color);
   font-size: 20px;
@@ -135,34 +137,65 @@ nav ul li:hover {
   letter-spacing: 1px;
 }
 
-/* servicos */
+.desc h2{
+  padding: 0px 40px 30px;
+
+}
+
+.desc h2,
+.servicos h2{
+  font-size: 48px;
+  font-weight: normal;
+}
+
+.servicos h2{
+  padding: 50px;
+}
+
 .servicos{
-  height: 250px;
+  background-color: var(--fourth-color);
+
+}
+
+/* servicos */
+.servicos .plat-servic{
+  min-height: 250px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   text-align: center;
   padding-top: 15px;
 }
 
-.servicos .item-servicos{
-  transition: padding .3s linear;
+.servicos h2{
+  text-align: center;
+  color: var(--third-color);
+}
 
+.servicos .item-servicos{
+  min-height: 250px;
+  transition: transform .3s linear;
 }
 
 .servicos .item-servicos p:nth-child(1){
   font-size: 80px;
+  color: var(--prymary-color);
+
 }
 .servicos .item-servicos p:nth-child(1):hover{
-  color: var(--prymary-color);
+  color: var(--third-color);
+}
+
+.servicos .item-servicos p:nth-child(3){
+  padding: 0 70px;
+  color: var(--third-color);
 }
 
 
-.servicos .item-servicos:nth-child(1):hover,
-.servicos .item-servicos:nth-child(2):hover,
-.servicos .item-servicos:nth-child(3):hover{
-  padding-top: 20px;
+.servicos .item-servicos:hover{
+  transform: scale(1.1);
 }
 
 .servicos .item-servicos h3{
   padding: 10px;
+  color: var(--third-color);
 }
