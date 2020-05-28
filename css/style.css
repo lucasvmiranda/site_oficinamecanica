@@ -135,7 +135,7 @@ nav ul li:hover {
   letter-spacing: 1px;
 }
 
-/*  */
+/* servicos */
 .servicos{
   height: 250px;
   display: grid;
@@ -161,7 +161,6 @@ nav ul li:hover {
 .servicos .item-servicos:nth-child(2):hover,
 .servicos .item-servicos:nth-child(3):hover{
   padding-top: 20px;
-
 }
 
 .servicos .item-servicos h3{
